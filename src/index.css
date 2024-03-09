@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .p-large {
+    @apply px-16 max-lg:px-12 max-md:px-8 max-sm:px-6 2xl:mx-auto 2xl:w-[1440px];
+    /* @apply mx-16 max-lg:mx-12 max-md:mx-8 max-sm:mx-6; */
+  }
+}
+
+.card_active {
+  @apply border-[3px] border-primary;
+}
+
+.heading-secondary {
+  @apply font-montserrat text-5xl font-bold leading-normal;
+}
+
+.heading-secondary span {
+  @apply text-primary;
+}
+
+.text-prime {
+  @apply font-montserrat text-base leading-normal text-slate-500;
+}
+
+.input {
+  @apply rounded-full px-4 py-2 text-base text-slate-500 outline-2 outline-offset-2 outline-transparent max-md:border-2 max-md:border-slate-300;
+}
